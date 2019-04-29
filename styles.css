@@ -7,33 +7,69 @@
     display: grid;
     height: 500px;
     width: 400px;
-    border: 1px solid black;
+    border: 3px solid black;
     margin: auto;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 1em;
     align-items: space-between;
     padding: 1em;
-
+    background-color: #44B3C2;
+    margin-top: 5em;
 }
 
-.display {
+#display {
     grid-column: 1/5;
     grid-row: 1/2;
+    border-radius: 0%;
+    background-color: #F1A94E;
 }
 
 .calculator > div {
-    border: 1px solid black;
+    border: 2px solid black;
     text-align: center;
     display: flex;
     justify-content: center; /* align horizontal */
     align-items: center; /* align vertical */
+    border-radius: 50%;
 }
 
-.calculator > div:nth-child(odd) {
+/*.calculator > div:nth-child(odd) {
     background-color: gray;
 }
 
 .calculator > div:nth-child(even) {
     background-color: white;
+}*/
+
+.number {
+    background-color: #7B8D8E;
+}
+
+.number:hover {
+    background-color: rgb(117, 119, 119);
+}
+
+.operator {
+    background-color: #F2EDD8; 
+}
+
+.operator:hover {
+    background-color: rgb(189, 187, 183); 
+}
+
+#clear {
+    background-color: #E45641;
+}
+
+#clear:hover {
+    background-color: rgb(226, 61, 36);
+}
+
+#equals {
+    background-color: #5D4C46;
+}
+
+#equals:hover {
+    background-color: rgb(109, 60, 42);
 }
